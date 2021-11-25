@@ -2,7 +2,7 @@ const prom = require('./promesa');
 
 prom.calcular(5,3).then((resultado) => {
     console.log(resultado);
-}, (error)=>{
+}, (error)=>{ //manejo de errores
     console.log(error);
 });
 

@@ -25,21 +25,23 @@ app.use((req, res, next) => {
 
 app.get('/:user', (req, res) => {
     let usuario = req.params.user;
-    res.send(`Bienvenido ${usuario}`);    
+    res.send(`Bienvenid@ ${usuario}`);    
 });
 
 app.post('/', (req, res) => {
-    res.send(`Hello World! ${req.method}`)
+    res.send(`Post realizado! ${req.method}`)
 });
 
 app.put('/', (req, res) => {
-    res.send(`Hello World! ${req.method}`)
+    res.send(`Put realizado! ${req.method}`)
 });
 
 app.delete('/', (req, res) => {
-    res.send(`Hello World! ${req.method}`)
+    res.send(`Delete realizado! ${req.method}`)
 });
 
 app.listen(3000, () => {
     console.log('Example app listening on port 3000!')
 });
+
+//middleware: ejecucion que se realiza despues del request y hasta antes del response
